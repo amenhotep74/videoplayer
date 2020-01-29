@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href='./css/style.css' type="text/css">
-    <title>Video Player</title>
+    <title>Youtube Clone</title>
 </head>
 <body>
-    <div class='test'>hello</div>
+    <div class='flex-navbar'>
+        <nav>Navbar search here</nav>
+    </div>
+
+    <div class='flex-container'>
+        <div id="sidemenu">
+            <div id="flex-sidemenu-inner">
+                <ul>
+                    <div id="flex-sidemenu-inner-btn">
+                        <i class="material-icons">home</i><br>Home
+                    </div>
+                    <br>
+                    <div id="flex-sidemenu-inner-btn">
+                        <i class="material-icons">trending_up</i><br>Trending
+                    </div>
+                    <br>
+                    <div id="flex-sidemenu-inner-btn">
+                        <i class="material-icons">subscriptions</i><br>Subscriptions
+                    </div>
+                    <br>
+                    <div id="flex-sidemenu-inner-btn">
+                        <i class="material-icons">library_books</i><br>Library
+                    </div>
+                    <br>
+                </ul>
+                
+            </div>
+        </div>
+
+        <div id='player' class='innertube'>
+            <video width='848' height='480' controls>
+                <source src="video/video.mp4">
+                    Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div id="rightcolumn">
+            <div class="thumbnail-item">
+                <a href="https://placeholder.com"><img src="https://via.placeholder.com/140x100"></a>
+                <h4>Video Title</h4>
+                <p>Channel Name</p>
+                <p>Views</p>
+            </div>
+            <div class="thumbnail-item">
+                <a href="https://placeholder.com"><img src="https://via.placeholder.com/140x100"></a>
+                <h4>Video Title</h4>
+                <p>Channel Name</p>
+                <p>Views</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
